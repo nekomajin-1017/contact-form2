@@ -1,0 +1,49 @@
+body {
+    background: var(--bg);
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form__content,
+.register-form__content {
+    width:90%;
+    max-width: 520px;
+    margin: 5px auto;
+    padding: 35px 50px 45px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+}
+
+
+.form__group {
+    margin-bottom: 25px;
+}
+
+.form__label {
+    margin-bottom: 8px;
+}
+
+.form__label-text {
+    font-size: 15px;
+}
+
+.form__text-input {
+    width: 100%;
+    background: var(--field);
+    border: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: var(--text);
+}
+
+.form__error {
+    margin-top: 6px;
+}
+
+.form__button {
+    margin-top: 20px;
+}

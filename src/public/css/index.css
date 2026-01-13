@@ -1,0 +1,145 @@
+.contact-form__content {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.form__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.form__row:last-child {
+    margin-bottom: 0;
+}
+
+.form__label {
+    width: 220px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.form__label-required {
+    color: var(--alert);
+}
+
+.form__control {
+    flex: 0 0 380px;
+    max-width: 380px;
+}
+
+.form__input-group {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.form__text-input,
+.form__textarea-field {
+    width: 100%;
+    border: none;
+    background: var(--field);
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+.form__text-input {
+    flex: 1;
+}
+
+.form__radio {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.form__radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 6px 0 0;
+    position: relative;
+}
+
+.form__radio input[type="radio"]:checked {
+    background: var(--dark);
+    border-color: var(--dark);
+}
+
+.form__radio label {
+    margin-right: 8px;
+}
+
+.form__tel-group {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form__field--tel {
+    width: calc((100% - 24px) / 3);
+}
+
+.form__tel-input {
+    width: 100%;
+    text-align: center;
+}
+
+.form__tel-sep {
+    margin-bottom: 5px;
+}
+
+.form__select-field {
+    width: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--line);
+    background: var(--field);
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text);
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--light) 50%),
+        linear-gradient(135deg, var(--light) 50%, transparent 50%);
+    background-position: calc(100% - 18px) 50%, calc(100% - 12px) 50%;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+.form__textarea-field {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form__error {
+    margin-top: 4px;
+}
+
+.form__button {
+    margin-top: 16px;
+}

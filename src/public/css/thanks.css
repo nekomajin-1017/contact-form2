@@ -1,0 +1,37 @@
+main {
+    margin-top: 200px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.thanks__message {
+    color: var(--dark);
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+    isolation: isolate;
+    margin: 0 0 15px;
+}
+
+.thanks__actions {
+    position: relative;
+    z-index: 1;
+}
+
+.thanks__message::before {
+    content: "Thank you";
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    color: var(--line);
+    letter-spacing: 1px;
+    z-index: -1;
+    white-space: nowrap;
+    pointer-events: none;
+}

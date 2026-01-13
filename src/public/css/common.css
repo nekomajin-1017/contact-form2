@@ -1,0 +1,90 @@
+:root {
+    --text: #795f46;
+    --dark: #8f7f6f;
+    --light: #c7ab8e;
+    --line: #e6e1db;
+    --field: #ecebe9;
+    --alert: #e73333;
+    --bg: #fbf0e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: #fff;
+    font-family: "Times New Roman", "Yu Gothic", "Noto Sans JP", "sans-serif";
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header__title {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.page-heading {
+    text-align: center;
+    margin: 36px 0 28px;
+}
+
+.page-heading__title {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.form__button-submit {
+    background: var(--dark);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header nav {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-action {
+    appearance: none;
+    background-color: var(--field);
+    border: 1.5px solid var(--light);
+    color: var(--light);
+    padding: 5px 20px;
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.form__error {
+    color: var(--alert);
+    font-size: 12px;
+}
